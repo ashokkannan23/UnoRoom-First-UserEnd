@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search_room</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Custom-Checkbox.css">
+    <link rel="stylesheet" href="assets/css/dh-header-cover-image-button.css">
+    <link rel="stylesheet" href="assets/css/feature.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="assets/css/Logo.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/slide.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/t-datepicker-bluegrey.css">
+    <link rel="stylesheet" href="assets/css/t-datepicker.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body style="width:1200px;min-width:100%;max-width:100%;">
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-light navbar-expand-md">
+                        <div class="container-fluid"><a class="navbar-brand" href="http://localhost/rooms-date/" id="brand-logo" style="background-image:url(&quot;assets/img/Room_logo.png&quot;);width:160px;height:60px;"> </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                            <div
+                                class="collapse navbar-collapse align-self-center" id="navcol-1">
+                                <ul class="nav navbar-nav align-items-center ml-auto visible" style="background-size:cover;height:21px;margin:0px;padding:0px;">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="background-image:url(&quot;assets/img/help.png&quot;);height:28px;width:28px;background-repeat:no-repeat;background-size:contain;background-position:center;"></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="padding-left:2px;margin-right:30px;">Help</a>
+                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                                    </li>
+                                    <li class="nav-item" role="presentation" style="background-image:url(&quot;assets/img/english-language.png&quot;);width:46px;background-size:contain;background-repeat:no-repeat;background-position:center;height:26px;padding:13px;"><a class="nav-link active" href="#"></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-image:url(&quot;assets/img/japanese-language.png&quot;);width:46px;background-repeat:no-repeat;background-size:contain;background-position:center;height:27px;"></a></li>
+                                    <li class="nav-item"
+                                        role="presentation"><a class="nav-link" href="#" style="background-image:url(&quot;assets/img/my-booking.png&quot;);width:45px;background-repeat:no-repeat;background-size:contain;background-position:center;height:30px;margin-left:30px;padding-right:8px;margin-right:-5px;"></a></li>
+                                    <li
+                                        class="nav-item" role="presentation" style="padding-left:0px;"><a class="nav-link active" href="#" style="margin-left:0px;padding-left:0px;height:40px;padding-right:8px;">My Booking</a></li>
+                                </ul>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+    <header id="myHeader" class="header">
+        <div class="header-container" style="padding-top:15px;padding-bottom:15px;background-color:rgb(0,42,71);height:140px;">
+            <div class="container" style="padding-right:0PX;padding-left:0PX;margin-top:5px;">
+                <div class="row no-gutters" style="padding:6px;padding-top:6px;background-color:#eae7e7;height:50px;">
+                    <div class="col-sm-1" style="width:65px;">
+                        <p class="text-uppercase text-center text-white bg-primary" style="height:50PX;margin-bottom:22PX;padding-top:10px;margin-top:-6px;padding-right:0px;width:98px;margin-right:0px;margin-left:-6px;font-size:20PX;font-family:Lato, sans-serif;">INDIA</p>
+                    </div>
+					
+					<div class="col-sm-2">
+					<select name="city" id="city"  class="form-control input-lg">
+					
+				
+					
+					</select>
+
+                    </div>
+                   <div class="col-sm-3 location">
+					<select name="locality" id="location" class="form-control input-lg form-inline">
+    
+                     </select>
+
+                   </div>
+					<div class="col-sm-3 preference">
+
+					<select name="room" id="room" class="form-control input-lg">
+					
+					</select>
+
+					</div>
+
+<div class="col-sm-3">
+
+  <!-- <div class="t-datepicker-temp" style="display: none;"> -->
+<!-- <div class="t-check-in-temp"><i class="fas fa-calendar-alt"></i> 22-1-2019</div> -->
+<!-- <div  class="t-check-out-temp"><i class="fas fa-calendar-alt"></i> 23-1-2019</div> -->
+<!-- </div>  -->
+
+<!-- <div class="t-datepicker-temp" style="font-size: 14px,display:none;"> -->
+
+<!-- </div> -->
+ 
+<div class="t-datepicker" >
+<div class="t-check-in"></div>
+<div  class="t-check-out"></div>
+</div>
+  
+ 
+  </div></div>
+            </div>
+            <div class="container" style="padding-right:0PX;padding-left:0PX;margin-top:-15px;">
+                <div  class="row no-gutters" style="padding:0px;padding-top:0px;height:40px;color:rgb(33,37,41);padding-bottom:0px;padding-left:0px;padding-right:0px;"><div style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+<p class="icon-hover"  style="font-size:16px;text-align:center;color:#fffff;vertical-align: middle;text-shadow: 1px 1px #000000;"><a  id="wifi-click"  href="javascript:void(1)"><i class="fas fa-wifi"></i> WIFI</a></p>
+</div>
+<div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+<p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;vertical-align: middle;text-shadow: 1px 1px #000000;"><a value="gym-yoga" id="gym-yoga-click" href="javascript:void(0)"><i class="fas fa-heartbeat"></i></i> GYM & YOGA</a>
+</div>
+<div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+<p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;vertical-align: middle;text-shadow: 1px 1px #000000;text-shadow: 1px 1px #303030;"><a value="pool" id="pool-click" href="javascript:void(0)"><i class="fas fa-swimmer"></i> POOL</a>
+</div>
+<div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+<p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;text-shadow: 1px 1px #000000;"><a value="spa" id="spa-click" href="javascript:void(0)"><i class="fas fa-spa"></i> SPA</a></p>
+</div>
+<div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-3">
+<p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;vertical-align: middle;text-shadow: 1px 1px #000000;"><a value="outdoor-indoor" id="outdoor-indoor-click" href="javascript:void(0)"><i class="fas fa-table-tennis"></i> OUTDOOR/INDOOR</a>
+</div>
+<div   style="height:48px;line-height:48px;" class="col-sm-1">
+<a class="search-filter" id="Search" style="padding:15px 19px;font-size:16px;text-align:center;color:#ffff;vertical-align: middle;background-color:#F26722;overflow:hidden;cursor:pointer;">SEARCH</a>
+</div>
+</div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="container-fluid" id="sort">
+            <div class="row">
+                <div class="col-md-6" id="get_details" style="height:90px;padding-right:15px;padding-left:15px;background-color:#c4e1f7;">
+                    <!-- <h3 id="displaypropertytype" style="padding-top:12px;padding-bottom:0px;padding-right:0px;margin-left:50px;font-family:Lato, sans-serif;font-weight:600;color:rgb(7,7,7);"></h3> -->
+                    <!-- <p id="displaylocality" style="height:28px;padding-bottom:10px;margin-left:50px;font-family:Lato, sans-serif;"><br><br></p> -->
+                </div>
+                <div class="col-md-6" style="background-color:#c4e1f7;"><form style="float:right;position:relative;top:50px;right:50px;"class="form-inline">
+  <div style="" class="form-group">
+      <label>Sort by:&nbsp;&nbsp;</label>
+     <select  class="form-control" >
+         <option>Popularity</option>
+         <option>Price: Low to High</option>
+         <option>Price: High to Low</option>
+        </select>
+  </div>
+</form></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid" id="main-content">
+            <div class="row" style="margin-top:15px;margin-right:50px;">
+                <div class="col-sm-3">
+				<div id="bangaloredowntownarea">
+                    <p style="font-size:18px;margin-left:50px;font-family:Lato, sans-serif;font-weight:600;font-style:normal;color:rgb(6,6,6);margin-bottom:10px;">Down Town Area</p><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Marathahalli 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Majestic 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> White field 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Koramangla 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Indiranagar 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Electronic City 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> MG Road 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Bangalore International Airport
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> All of Bangalore 
+ </label>
+</div>
+</div>
+
+ <p style="font-size:18px;margin-left:50px;font-family:Lato, sans-serif;font-weight:600;font-style:normal;color:rgb(6,6,6);margin-bottom:10px;">Entertainment Around</p><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Malls 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Pubs 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Bars 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Parks 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Lakes 
+ </label>
+</div><div id="left-filter" class="checkbox">
+ <label>
+    <input type="checkbox">
+    <span class="checkbox-material">
+        <span class="check"></span>
+    </span> Trekking 
+ </label>
+</div>
+                <p style="font-size:18px;margin-left:50px;font-family:Lato, sans-serif;font-weight:600;font-style:normal;color:rgb(6,6,6);margin-bottom:10px;"><strong>¥&nbsp;</strong>Price Range</p><div style="margin-left:50px;">
+ <p class="box">  
+   
+ <input type="text" id="amount" readonly class="goldSliderText">
+   </p>
+ <div style="width:80%;" id="slider-range"></div>
+
+
+
+</div></div>
+        <!-- <div  id="right-content" style="width:100%;height:60%;margin-top:-70px;"> -->
+		<div id="result-content"  class="col-sm-9" style="padding:5px;">
+ </div>
+    </div>
+    </div>
+    </div>
+	<div>
+	<span id="teststart" value=""></span>
+	<span id="testend" value=""></span>
+	
+	</div>
+    <div>
+        <div class="container-fluid" style="height:100px;">
+            <div class="row" style="height:100px;">
+                <div class="col-md-6" style="background-color:#01a6f8;">
+                    <h5 style="color:rgb(247,248,249);padding-top:10px;padding-left:50px;">Connect with us :</h5><div class="social-icons"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div></div>
+                <div class="col-md-6 col-xl-6 offset-xl-0" style="background-color:#01a6f8;">
+                    <p class="text-right" style="color:rgb(254,254,254);margin:0 auto;margin-top:45px;margin-right:50px;">© 2019 rooms - All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+    <script>
+        var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<script>
+        
+        $(window).scroll(function(){
+  var sticky = $('#sort'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 90) sticky.addClass('sort-option');
+  else sticky.removeClass('sort-option');
+});
+    
+    </script>
+    <script>
+        
+        $(window).scroll(function(){
+  var sticky = $('#main-content'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 70) sticky.addClass('main-option');
+  else sticky.removeClass('main-option');
+});
+    
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jQueryA.js"></script>
+	<!-- <script src="assets/js/secondpage.js"></script> -->
+	<script src="assets/js/t-datepicker.js"></script>
+	
+	
+	
+	
+	
+	
+	<script>
+	 <!-- CITY-JSON-OPEN -->
+	$(document).ready(function(){
+ 
+    $.getJSON("http://192.168.1.211:3000/meta/cities", function(result){
+      $.each(result, function(){
+	  
+	  
+	
+		
+		var city = '';
+	
+	  
+	  var cityplace = result.length;
+		for(i=0;i<=cityplace-1;i++){
+   
+			city +='<option value="'+result[i]+'">'+ result[i] +'</option>';
+    
+               };
+
+
+		$("#city").html(city);
+		
+			 $(function GetURLParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++)
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam)
+            {
+                return sParameterName[1];
+            }
+        }
+		
+		var citymatch  = GetURLParameter('city');
+		console.log(citymatch);
+		
+		$("#city option").each(function(){
+  if ($(this).val() == citymatch){
+    $(this).attr("selected","selected");
+	}
+});
+	
+	
+	});
+		
+		
+		
+			
+       
+      });
+	  });
+	  });
+  
+ </script>
+<script>
+$(document).ready(function(){
+$(function GetURLParameter(sParam)
+{
+var sPageURL = window.location.search.substring(1);
+var sURLVariables = sPageURL.split('&');
+for (var i = 0; i < sURLVariables.length; i++)
+		{
+		var sParameterName = sURLVariables[i].split('=');
+		if (sParameterName[0] == sParam)
+		{
+		return sParameterName[1];
+		}
+		}
+		var citymatch  = GetURLParameter('city');
+		var localitymatch  = GetURLParameter('locality');
+		         var testing = localitymatch.replace(/%20/g, " ");
+				 console.log(testing);
+
+		$.getJSON('http://192.168.1.211:3000/meta/localities?city=' + citymatch, function(result){
+		$.each(result, function(){
+		var locality = '';
+
+
+		var localityplace = result.length;
+		for(i=0;i<=localityplace-1;i++){
+
+				locality +='<option value="'+result[i]+'">'+ result[i] +'</option>';
+
+
+				};
+
+				$("#location").html(locality);
+				<!--- Select Locality Data -->
+				$("#location option").each(function(){
+				if ($(this).val() == testing){
+				$(this).attr("selected","selected");
+				}
+				});
+				<!--- Select Locality Data -->
+
+
+
+				});	
+				});	
+
+
+
+
+
+
+
+				});
+				});
+
+			</script>
+			
+			<script>
+			$("#city").change(function(){
+var selectedCity = $(this).children("option:selected").val();
+
+console.log(selectedCity);
+$.getJSON('http://192.168.1.211:3000/meta/localities?city=' + selectedCity, function(result){
+$.each(result, function(){
+var locality = '';
+
+
+var localityplace = result.length;
+for(i=0;i<=localityplace-1;i++){
+
+		locality +='<option value="'+result[i]+'">'+ result[i] +'</option>';
+
+
+		};
+
+		$("#location").html(locality);
+
+
+
+
+		});	
+		});	
+
+
+		});
+			
+			
+			</script>
+	
+  <!-- location-JSON-CLOSE -->
+    <!-- Preference-JSON-OPEN -->
+	<script>
+	$(document).ready(function(){
+ 
+	var uiRoomType = 
+	{
+	"SingleBedRoom": "Single Bed Room", 
+	"DoubleBedRoom": "Double Bed Room", 
+	"OneBHKApartment": "One BHK Apartment", 
+	"TwoBHKApartment": "Two BHK Apartment",
+	"ThreeBHKApartment": "Three BHK Apartment",
+	};
+	var rtype =["SingleBedRoom", "DoubleBedRoom", "OneBHKApartment", "TwoBHKApartment", "ThreeBHKApartment"];
+	
+	var getlength = rtype.length;
+	var typeget = uiRoomType[rtype];
+	
+	Storevalue = [];
+	
+	for(i=0;i<=getlength-1;i++){
+	
+			Storevalue += '<option value="'+ rtype[i] +'">'+ uiRoomType[rtype[i]] +'</option>';
+	
+			}
+			$("#room").html(Storevalue);
+			
+
+ $(function GetURLParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++)
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam)
+            {
+                return sParameterName[1];
+            }
+        }
+		
+		var roomtypematch  = GetURLParameter('room-type');
+		console.log(roomtypematch);
+		
+		
+    
+    $("#room option").each(function(){
+  if ($(this).val() == roomtypematch){
+    $(this).attr("selected","selected");
+	}
+});
+	
+	});
+	
+	});
+
+  
+  </script>
+  <!-- Preference-JSON-CLOSE -->
+  
+ <!-- Start Date & End Date-OPEN -->
+  <script>
+
+var $j = jQuery.noConflict();
+<!-- $j(".t-datepicker").datepicker(); -->
+
+
+ $j(document).ready(function(){
+    // Call global the function
+	
+    $j('.t-datepicker').tDatePicker({
+      // options here
+    });
+  });
+</script>
+
+<!-- Start Date & End Date-CLOSE -->
+
+<!-- Fetch The Start Date & End Date-OPEN -->
+	<!-- <script> -->
+		<!-- jQuery(document).ready(function($){ -->
+		<!-- $('.t-datepicker-temp').on('click',function(){ -->
+		<!-- $('.t-datepicker-temp').hide(); -->
+		<!-- $('.t-datepicker').show(); -->
+		
+		<!-- }); -->
+		<!-- }); -->
+		<!-- </script> -->
+		
+		
+		
+	
+
+<!-- Fetch The Start Date & End Date-CLOSE -->
+
+  <!--WIFI-GYM & YOGA-POOL-SPA-OUTDOOR & INDOOR-OPEN--->
+		<script>
+		jQuery(document).ready(function($){
+	 $(function GetURLParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++)
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam)
+            {
+                return sParameterName[1];
+            }
+        }
+		
+		var cityname = GetURLParameter('city');
+		var localityname = GetURLParameter('locality');
+		var roomtypename = GetURLParameter('room-type');
+		var wifimatch  = GetURLParameter('wifi');
+		var gymyogamatch  = GetURLParameter('gymyoga');
+		var poolmatch  = GetURLParameter('pool');
+		var spamatch  = GetURLParameter('spa');
+		var outinmatch  = GetURLParameter('outin');
+		var startdate = GetURLParameter('startdate');
+		var enddate = GetURLParameter('enddate');
+		console.log(cityname,localityname,roomtypename,startdate,enddate,wifimatch,gymyogamatch,poolmatch,spamatch,outinmatch);
+		
+		<!-- Display- startdate & enddate -- OPEN -->
+		
+		
+		
+		var checkindate = $.datepicker.formatDate("dd M yy", new Date(startdate));
+		var checkoutdate = $.datepicker.formatDate("dd M yy", new Date(enddate));
+
+        <!-- console.log(checkindate,checkoutdate); -->
+		
+		<!-- Display- startdate & enddate -- OPEN -->
+		
+		var starttoendDate = '';
+		
+		starttoendDate+= '<div class="t-check-in">'+
+'<div class="t-dates t-date-check-in">'+
+'<i class="fas fa-calendar-alt"></i>'+
+'<label class="t-date-info-title"></label>'+
+'<span class="t-day-check-inn" value="'+startdate+'"> '+checkindate+'</span>'+
+
+'</div>'+
+'</div>'+
+'<div class="t-check-out">'+
+'<div class="t-dates t-date-check-out">'+
+'<i class="fas fa-calendar-alt"></i>'+
+'<label class="t-date-info-title"></label>'+
+'<span class="t-day-check-outt" value="'+enddate+'"> '+checkoutdate+'</span>'+
+
+'</div>'+
+'</div>';
+
+$(".t-datepicker-temp").html(starttoendDate);
+
+console.log(starttoendDate);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Display- property-type & CLICK OPEN -->
+		
+		 
+  var lines = $("#result-content > div").length;
+  var show_details = '';
+  show_details += '<h5  style="padding-top:12px;padding-bottom:0px;padding-right:0px;margin-left:50px;font-family:Lato, sans-serif;font-weight:600;color:rgb(7,7,7);">'+ roomtypename +' in '+ cityname +' at '+ localityname +'</h5>'+
+                   '<p style="height:28px;padding-bottom:10px;margin-left:50px;font-family:Lato, sans-serif;">'+ lines +' Result Showings</p>';
+  $("#get_details").html(show_details);
+<!-- Display- property-type & CLICK CLOSE -->
+
+	
+	
+	
+	<!-- Hide & Show - Locality-type -- OPEN -->
+	
+	
+	if (localityname == 'nearbyairport'){
+	
+	$("#nearbyairport").show();
+	}else if ((localityname == 'downtownarea') && (cityname == 'bangalore')){
+	$("#bangaloredowntownarea").show();
+	}else if ((localityname == 'KK%20Nagar') && (cityname == 'Chennai')){
+	$("#bangaloredowntownarea").show();
+	}else if ((localityname == 'downtownarea') && (cityname == 'delhi')){
+	$("#bangaloredowntownarea").show();
+	}else if ((localityname == 'downtownarea') && (cityname == 'mumbai')){
+	$("#bangaloredowntownarea").show();
+	}else if ((localityname == 'downtownarea') && (cityname == 'hyderabad')){
+	$("#bangaloredowntownarea").show();
+	}else if ((localityname == 'downtownarea') && (cityname == 'kolkata')){
+	$("#bangaloredowntownarea").show();
+	}
+	<!-- Hide & Show - Locality-type -- CLOSE -->
+	
+	
+	
+	
+	
+		
+		<!-- WIFI - FILTER & CLICK OPEN -->
+		    $("#wifi-click").each(function(){
+  if (wifimatch == 'wifi'){
+    $(this).css('color', '#fef300')
+	$(this).attr('at', 'wifi')
+	$(this).attr('data-click-state', 1)
+} 
+   
+	});
+		
+		
+$('#wifi-click').on('click',function(){
+
+
+if($(this).attr('data-click-state') == 1) {
+$(this).attr('data-click-state', 0)
+$(this).css('color', 'rgb(243,243,244)')
+$(this).attr('at', 'wifi-no')
+} else {
+$(this).attr('data-click-state', 1)
+$(this).css('color', '#fef300')
+$(this).attr('at', 'wifi')
+
+}
+
+});
+<!-- WIFI - FILTER & CLICK OPEN -->
+
+<!-- GYMYOGA - FILTER & CLICK OPEN -->
+		    $("#gym-yoga-click").each(function(){
+  if (gymyogamatch == 'gym'){
+    $(this).css('color', '#fef300')
+	$(this).attr('at', 'gym')
+	$(this).attr('data-click-state', 1)
+} 
+   
+	});
+		
+		
+$('#gym-yoga-click').on('click',function(){
+
+
+if($(this).attr('data-click-state') == 1) {
+$(this).attr('data-click-state', 0)
+$(this).css('color', 'rgb(243,243,244)')
+$(this).attr('at', 'gym-no')
+} else {
+$(this).attr('data-click-state', 1)
+$(this).css('color', '#fef300')
+$(this).attr('at', 'gym')
+
+}
+
+});
+<!-- GYMYOGA - FILTER & CLICK OPEN -->
+
+<!-- POOL - FILTER & CLICK OPEN -->
+		    $("#pool-click").each(function(){
+  if (poolmatch == 'pool'){
+    $(this).css('color', '#fef300')
+	$(this).attr('at', 'pool')
+	$(this).attr('data-click-state', 1)
+} 
+   
+	});
+		
+		
+$('#pool-click').on('click',function(){
+
+
+if($(this).attr('data-click-state') == 1) {
+$(this).attr('data-click-state', 0)
+$(this).css('color', 'rgb(243,243,244)')
+$(this).attr('at', 'pool-no')
+} else {
+$(this).attr('data-click-state', 1)
+$(this).css('color', '#fef300')
+$(this).attr('at', 'pool')
+
+}
+
+});
+<!-- POOL - FILTER & CLICK OPEN -->
+
+<!-- SPA - FILTER & CLICK OPEN -->
+$("#spa-click").each(function(){
+  if (spamatch  == 'spa'){
+    $(this).css('color', '#fef300')
+	$(this).attr('at', 'spa')
+	$(this).attr('data-click-state', 1)
+} 
+   
+	});
+		
+		
+$('#spa-click').on('click',function(){
+
+
+if($(this).attr('data-click-state') == 1) {
+$(this).attr('data-click-state', 0)
+$(this).css('color', 'rgb(243,243,244)')
+$(this).attr('at', 'spa-no')
+} else {
+$(this).attr('data-click-state', 1)
+$(this).css('color', '#fef300')
+$(this).attr('at', 'spa')
+
+}
+
+});
+<!-- SPA - FILTER & CLICK OPEN -->
+
+<!-- OUTDOORINDOOR - FILTER & CLICK OPEN -->
+$("#outdoor-indoor-click").each(function(){
+  if (outinmatch  == 'outin'){
+    $(this).css('color', '#fef300')
+	$(this).attr('at', 'outin')
+	$(this).attr('data-click-state', 1)
+} 
+   
+	});
+		
+		
+$('#outdoor-indoor-click').on('click',function(){
+
+
+if($(this).attr('data-click-state') == 1) {
+$(this).attr('data-click-state', 0)
+$(this).css('color', 'rgb(243,243,244)')
+$(this).attr('at', 'outin-no')
+} else {
+$(this).attr('data-click-state', 1)
+$(this).css('color', '#fef300')
+$(this).attr('at', 'outin')
+
+}
+
+});
+<!-- OUTDOORINDOOR - FILTER & CLICK OPEN -->
+
+});
+});
+
+</script>
+		
+
+<!--WIFI-GYM & YOGA-POOL-SPA-OUTDOOR & INDOOR-CLOSE--->
+</body>
+
+</html>

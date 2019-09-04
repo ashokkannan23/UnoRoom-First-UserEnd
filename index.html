@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>room</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+        <link rel="stylesheet" href="assets/css/dh-header-cover-image-button.css">
+        <link rel="stylesheet" href="assets/css/feature.css">
+        <link rel="stylesheet" href="assets/css/Logo.css">
+        <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+        <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+        <link rel="stylesheet" href="assets/css/slide.css">
+        <link rel="stylesheet" href="assets/css/slider.css">
+        <link rel="stylesheet" href="assets/css/Social-Icons.css">
+        <!-- <link href="assets/css/datepicker.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="assets/css/t-datepicker-bluegrey.css">
+        <link rel="stylesheet" href="assets/css/t-datepicker.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="jquery-ui.css" rel="stylesheet">
+        <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    <body>
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-light navbar-expand-md">
+                            <div class="container-fluid"><a class="navbar-brand" href="http://localhost/rooms-date/" id="brand-logo" style="background-image:url(&quot;assets/img/Room_logo.png&quot;);width:160px;height:60px;"> </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                            <div
+                                class="collapse navbar-collapse align-self-center" id="navcol-1">
+                                <ul class="nav navbar-nav align-items-center ml-auto visible" style="background-size:cover;height:21px;margin:0px;padding:0px;">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="background-image:url(&quot;assets/img/help.png&quot;);height:28px;width:28px;background-repeat:no-repeat;background-size:contain;background-position:center;"></a></li>
+                                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="padding-left:2px;margin-right:30px;">Help</a>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                                </li>
+                                <li class="nav-item" role="presentation" style="background-image:url(&quot;assets/img/english-language.png&quot;);width:46px;background-size:contain;background-repeat:no-repeat;background-position:center;height:26px;padding:13px;"><a class="nav-link active" href="#"></a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="background-image:url(&quot;assets/img/japanese-language.png&quot;);width:46px;background-repeat:no-repeat;background-size:contain;background-position:center;height:27px;"></a></li>
+                                <li class="nav-item"
+                                    role="presentation"><a class="nav-link" href="#" style="background-image:url(&quot;assets/img/my-booking.png&quot;);width:45px;background-repeat:no-repeat;background-size:contain;background-position:center;height:30px;margin-left:30px;padding-right:8px;margin-right:-5px;"></a></li>
+                                    <li
+                                        class="nav-item" role="presentation" style="padding-left:0px;"><a class="nav-link active" href="#" style="margin-left:0px;padding-left:0px;height:40px;padding-right:8px;">My Booking</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-container" style="padding-top:100px;padding-bottom:175px;background-color:black;height:375px;">
+                <div class="container" style="margin-left:-6px;margin-top:-20px;margin-bottom:35px;">
+                    <div class="col-md-6 offset-md-3 header-title">
+                        <h1 class="text-center heading-title" style="color:#ffffff;width:710px;text-shadow: 3px 3px #303030;"></h1>
+                        <h4 class="text-center sub-heading-title" style="color:#ffffff;width:710px;text-shadow: 3px 3px #303030;"></h4>
+                    </div>
+                </div>
+                <div class="container" style="padding-right:0PX;padding-left:0PX;">
+                    <div class="row no-gutters" style="padding:6px;padding-top:6px;background-color:#eae7e7;height:50px;">
+                        <div class="col-sm-1" style="width:65px;">
+                            <p class="text-uppercase text-center text-white bg-primary" style="height:50PX;margin-bottom:22PX;padding-top:10px;margin-top:-6px;padding-right:0px;width:98px;margin-right:0px;margin-left:-6px;font-size:20PX;font-family:Lato, sans-serif;">INDIA</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <select name="city" id="city" onmousedown=""  onchange='this.size=0;' onblur="this.size=0;" class="form-control input-lg">
+                            </select>
+                        </div>
+                        <div class="col-sm-3 location">
+                            <select name="locality" id="location" class="form-control input-lg form-inline">
+                            </select>
+                        </div>
+                        <div class="col-sm-3 preference">
+                            <select name="room" id="room" class="form-control input-lg">
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="t-datepicker">
+                                <div class="t-check-in"></div>
+                                <div  class="t-check-out"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="padding-right:0PX;padding-left:0PX;margin-top:-15px;">
+                    <div  class="row no-gutters" style="padding:0px;padding-top:0px;height:40px;color:rgb(33,37,41);padding-bottom:0px;padding-left:0px;padding-right:0px;"><div style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+                        <p class="icon-hover"  style="font-size:16px;text-align:center;color:#fffff;vertical-align: middle;text-shadow: 1px 1px #000000;"><a  id="wifi-click" href="javascript:void(0)"><i class="fas fa-wifi"></i> WIFI</a></p>
+                    </div>
+                    <div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+                        <p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;vertical-align: middle;text-shadow: 1px 1px #000000;"><a value="gym-yoga" id="gym-yoga-click" href="javascript:void(0)"><i class="fas fa-heartbeat"></i></i> GYM & YOGA</a>
+                    </div>
+                    <div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+                        <p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;vertical-align: middle;text-shadow: 1px 1px #000000;text-shadow: 1px 1px #303030;"><a value="pool" id="pool-click" href="javascript:void(0)"><i class="fas fa-swimmer"></i> POOL</a>
+                    </div>
+                    <div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-2">
+                        <p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;text-shadow: 1px 1px #000000;"><a value="spa" id="spa-click" href="javascript:void(0)"><i class="fas fa-spa"></i> SPA</a></p>
+                    </div>
+                    <div  style="border:2px solid #ffff;height:50px;line-height:50px;" class="col-sm-3">
+                        <p class="icon-hover" style="font-size:16px;text-align:center;color:#ffff;vertical-align: middle;text-shadow: 1px 1px #000000;"><a value="outdoor-indoor" id="outdoor-indoor-click" href="javascript:void(0)"><i class="fas fa-utensils"></i> KITCHEN</a>
+                    </div>
+                    <div   style="height:48px;line-height:48px;" class="col-sm-1">
+                        <a class="search-filter" id="Search" style="padding:15px 19px;font-size:16px;text-align:center;color:#ffff;vertical-align: middle;background-color:#F26722;overflow:hidden;cursor:pointer;">SEARCH</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="text-align:center;font-size:25px;">Search By City</h2>
+                <div id="mixedSlide">
+                    <div class="MS-content search_by_city">
+                        <div class="item">
+                            <div class="imgTitle">
+                            <h4 class="blogTitle">MG Road</h4>
+                            <img src="assets/img/mg-road.png" alt="" />
+                            </div>
+                            <p style="font-weight:bold;">Bangalore</p>
+                        </div>
+                        <div class="item">
+                        <div class="imgTitle">
+                        <h4 class="blogTitle">Connaught Place</h4>
+                        <img src="assets/img/connaught.png" alt="" />
+                        </div>
+                        <p style="font-weight:bold;">Delhi</p>
+                        </div>
+                        <div class="item">
+                        <div class="imgTitle">
+                        <h4 class="blogTitle">Malabar Hill</h4>
+                        <img src="assets/img/malabar.png" alt="" />
+                        </div>
+                        <p style="font-weight:bold;">Mumbai</p>
+                        </div>
+                        <div class="item">
+                        <div class="imgTitle">
+                        <h4 class="blogTitle">Connaught Place</h4>
+                        <img src="assets/img/connaught.png" alt="" />
+                        </div>
+                        <p style="font-weight:bold;">Delhi</p>
+                        </div>
+                        <div class="item">
+                        <div class="imgTitle">
+                        <h4 class="blogTitle">Malabar Hill</h4>
+                        <img src="assets/img/malabar.png" alt="" />
+                        </div>
+                        <p style="font-weight:bold;">Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="MS-controls">
+                        <button class="MS-left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+                        <button class="MS-right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <h2 style="text-align:center;font-size:25px;">Feature Property</h2>
+                    <div id="mixedSlid">
+                        <div class="MS-content Featureprop">
+                        </div>
+                    </div>
+                </div>
+            </div></br>
+        </div></div>
+        <div style="margin-top:34px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="background-color:#353535;height:274px;">
+                        <h4 class="text-center" style="color:rgb(250,251,252);margin-top:23px;font-family:Lato, sans-serif;">Get our newsletter and stay current on rental deals and specials.</h4>
+                        <div class="newsletter" style="height:65px;width:100%;margin-top:27px;">
+                            <div class="form-group" style="text-align:center;"><input class="form-control-lg" type="text" placeholder="Name" style="margin-right:15px;"><input class="form-control-lg" type="text" placeholder="Phone Number" style="margin-right:15px;"></div>
+                        </div>
+                        <div class="form-group" style="text-align:center;"><input class="form-control-lg" type="text" placeholder="E-mail Address" style="margin-right:15px;width:527px;"></div><div class="form-group" style="text-align:center;"><button style="background-color:#F26722;color:white;" class="btn" type="submit">Subscribe</button></div></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container-fluid" style="height:100px;">
+                    <div class="row" style="height:100px;">
+                        <div class="col-md-6" style="background-color:#01a6f8;">
+                            <h5 style="color:rgb(247,248,249);padding-top:10px;padding-left:50px;">Connect with us :</h5><div class="social-icons"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div></div>
+                            <div class="col-md-6 col-xl-6 offset-xl-0" style="background-color:#01a6f8;">
+                                <p class="text-right" style="color:rgb(254,254,254);margin:0 auto;margin-top:45px;margin-right:50px;">© 2019 rooms - All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                <script src="assets/js/multislider.js"></script>
+                <script src="assets/js/t-datepicker.js"></script>
+                <script>
+                var $j = jQuery.noConflict();
+                <!-- $j(".t-datepicker").datepicker(); -->
+                $j(document).ready(function(){
+                // Call global the function
+                $j('.t-datepicker').tDatePicker({
+                // options here
+                });
+                });
+                </script>
+                <script>
+                var $j = jQuery.noConflict();
+                $j(document).ready(function(){
+                $j('#basicSlide').multislider({
+                continuous: true,
+                duration: 3000
+                });
+                $j('#mixedSlide').multislider({
+                duration: 750,
+                interval: 4000
+                });
+                });
+                </script>
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/fetch_featured_property.js"></script>
+            <script src="assets/js/jQueryA.js"></script>
+            <script src="assets/js/jquery-ui.js"></script>
+        </body>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script>
+        <!-- BANNER-JSON-OPEN -->
+        $(document).ready(function(){
+        $.getJSON("banner_heading_title.json", function(result){
+        $.each(result, function(){
+        $(".header-container").css("background-image", "url('"+ result.photo +"')");
+        $(".heading-title").html(result.heading);
+        $(".sub-heading-title").html(result.subheading);
+        });
+        });
+        });
+        <!-- BANNER-JSON-CLOSE -->
+        <!-- CITY-JSON-OPEN -->
+        $(document).ready(function(){
+        $.getJSON('http://192.168.1.211:3000/meta/cities', function(result){
+        var city = '';
+        var cityplace = result.length;
+        for(i=0;i<=cityplace-1;i++){
+        city +='<option   value="'+ result[i] +'">'+ result[i] +'</option>';
+        };
+        $("#city").html(city);
+        $('select>option:eq(1)').prop('selected', true);
+        $.getJSON('http://192.168.1.211:3000/meta/localities?city=Bangalore', function(data){
+        var locality = '';
+        var localityplace = data.length;
+        for(i=0;i<=localityplace-1;i++){
+        locality +='<option value="'+data[i]+'">'+ data[i] +'</option>';
+        };
+        $("#location").html(locality);
+        });
+        });
+        });
+        <!-- CITY-JSON-CLOSE -->
+        <!-- Location-JSON-OPEN -->
+        $(document).ready(function(){
+        $("#city").change(function(){
+        var selectedCity = $(this).children("option:selected").val();
+        console.log(selectedCity);
+        $.getJSON('http://192.168.1.211:3000/meta/localities?city=' + selectedCity, function(result){
+        $.each(result, function(){
+        var locality = '';
+        var localityplace = result.length;
+        for(i=0;i<=localityplace-1;i++){
+        locality +='<option value="'+result[i]+'">'+ result[i] +'</option>';
+        };
+        $("#location").html(locality);
+        });
+        });
+        });
+        });
+        <!-- location-JSON-CLOSE -->
+        <!-- Preference-JSON-OPEN -->
+        $(document).ready(function(){
+        var uiRoomType =
+        {
+        "SingleBedRoom": "Single Bed Room",
+        "DoubleBedRoom": "Double Bed Room",
+        "OneBHKApartment": "One BHK Apartment",
+        "TwoBHKApartment": "Two BHK Apartment",
+        "ThreeBHKApartment": "Three BHK Apartment",
+        };
+        var rtype =["SingleBedRoom", "DoubleBedRoom", "OneBHKApartment", "TwoBHKApartment", "ThreeBHKApartment"];
+        var getlength = rtype.length;
+        var typeget = uiRoomType[rtype];
+        Storevalue = [];
+        for(i=0;i<=getlength-1;i++){
+        Storevalue += '<option value="'+ rtype[i] +'">'+ uiRoomType[rtype[i]] +'</option>';
+        }
+        $("#room").html(Storevalue);
+        });
+        <!-- Preference-JSON-CLOSE -->
+        
+        <!-- SEARCH BY CITY-JSON-OPEN -->
+        $(document).ready(function(){
+        $.getJSON("search_by_cities.json", function(results){
+        $.each(results, function(){
+        var searchby = '';
+        var searchbycity = results.length;
+        for(i=0;i<=searchbycity-1;i++){
+        searchby +=  '<div class="item">'+
+            '<div class="imgTitle">'+
+                '<h4 class="blogTitle">'+ results[i].place +'</h4>'+
+                '<img src="'+ results[i].img +'" alt="" />'+
+            '</div>'+
+            '<p style="font-weight:bold;">'+ results[i].city +'</p>'+
+        '</div>';
+        };
+        $(".search_by_city").html(searchby);
+        });
+        });
+        });
+        </script>
+        <!--WIFI-GYM & YOGA-POOL-SPA-OUTDOOR & INDOOR-OPEN--->
+        <script>
+        jQuery(document).ready(function($){
+        $('#wifi-click').on('click',function(){
+        if($(this).attr('data-click-state') == 1) {
+        $(this).attr('data-click-state', 0)
+        $(this).css('color', 'rgb(243,243,244)')
+        $(this).attr('at', 'wifi-no')
+        } else {
+        $(this).attr('data-click-state', 1)
+        $(this).css('color', '#fef300')
+        $(this).attr('at', 'wifi')
+        }
+        });
+        $('#gym-yoga-click').on('click',function(){
+        if($(this).attr('data-click-state') == 1) {
+        $(this).attr('data-click-state', 0)
+        $(this).css('color', 'rgb(243,243,244)')
+        $(this).attr('at', 'gym-no')
+        } else {
+        $(this).attr('data-click-state', 1)
+        $(this).css('color', '#fef300')
+        $(this).attr('at', 'gym')
+        }
+        });
+        $('#pool-click').on('click',function(){
+        if($(this).attr('data-click-state') == 1) {
+        $(this).attr('data-click-state', 0)
+        $(this).css('color', 'rgb(243,243,244)')
+        $(this).attr('at', 'pool-no')
+        } else {
+        $(this).attr('data-click-state', 1)
+        $(this).css('color', '#fef300')
+        $(this).attr('at', 'pool')
+        }
+        });
+        $('#spa-click').on('click',function(){
+        if($(this).attr('data-click-state') == 1) {
+        $(this).attr('data-click-state', 0)
+        $(this).css('color', 'rgb(243,243,244)')
+        $(this).attr('at', 'spa-no')
+        } else {
+        $(this).attr('data-click-state', 1)
+        $(this).css('color', '#fef300')
+        $(this).attr('at', 'spa')
+        }
+        });
+        $('#outdoor-indoor-click').on('click',function(){
+        if($(this).attr('data-click-state') == 1) {
+        $(this).attr('data-click-state', 0)
+        $(this).css('color', 'rgb(243,243,244)')
+        $(this).attr('at', 'outin-no')
+        } else {
+        $(this).attr('data-click-state', 1)
+        $(this).css('color', '#fef300')
+        $(this).attr('at', 'outin')
+        }
+        });
+        });
+        </script>
+        <!--WIFI-GYM & YOGA-POOL-SPA-OUTDOOR & INDOOR-CLOSE--->
+    </html>

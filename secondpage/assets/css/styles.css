@@ -1,0 +1,49 @@
+.icon-hover a {
+  color:rgb(243,243,244);
+}
+
+.icon-hover a:hover {
+  color:#fef300;
+  text-decoration:none;
+}
+
+.show-content {
+  position:relative;
+  display:inline-block;
+  font-size:14px;
+  cursor:pointer;
+  border:2px solid black;
+  padding:2px;
+}
+
+.show-content .tooltiptext {
+  visibility:hidden;
+  width:150px;
+  background-color:rgb(23,22,22);
+  color:#fff;
+  text-align:center;
+  border-radius:6px;
+  padding:5px 0;
+  position:absolute;
+  font-size:12px;
+  z-index:1;
+  top:150%;
+  left:30%;
+  margin-left:-60px;
+}
+
+.show-content .tooltiptext::after {
+  content:"";
+  position:absolute;
+  bottom:100%;
+  left:50%;
+  margin-left:-5px;
+  border-width:5px;
+  border-style:solid;
+  border-color:transparent transparent black transparent;
+}
+
+.show-content:hover .tooltiptext {
+  visibility:visible;
+}
+

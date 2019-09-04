@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Lgin page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="login.css">
+<script src="login.js"></script>
+</head>
+<body>
+<header></header>
+<form name="myform" class="class1" methord="post">
+<p class="Heading">Login</p>
+<p class="form-value">Email or phone number</p>
+<input type="mail" name="email" class="login-form" placeholder="email or phonenumber"  required>
+<p class="form-value">Password</p>
+<input type="password" class="login-form" name="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])"required><br/>
+<input type="button" class="btn" value="Submit" onclick="validate()">
+</form>
+<footer></footer>
+</body>
+</html>
+

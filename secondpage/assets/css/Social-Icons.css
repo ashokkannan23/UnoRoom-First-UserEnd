@@ -1,0 +1,27 @@
+.social-icons {
+  color:#313437;
+  /*background-color:#fff;*/
+  /*text-align:center;*/
+  /*padding:50px 0px 0px 0px;*/
+  padding-left:40px;
+}
+
+@media (max-width:767px) {
+  .social-icons {
+    padding:50px 0;
+  }
+}
+
+.social-icons i {
+  font-size:18px;
+  display:inline-block;
+  color:#f8f8f9;
+  margin:0 5px;
+  width:40px;
+  height:40px;
+  border:1px solid #c8ced7;
+  text-align:center;
+  border-radius:50%;
+  line-height:40px;
+}
+

@@ -1,0 +1,190 @@
+#mixedSlid {
+  position:relative;
+}
+
+#mixedSlid .MS-content {
+  /* white-space:nowrap; */
+  overflow:hidden;
+  margin:0 5%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+#mixedSlid .MS-content .item {
+  display:inline-block;
+  width:32.4%;
+  position:relative;
+  vertical-align:top;
+  overflow:hidden;
+  height:100%;
+  white-space:normal;
+  border:1px solid #808080;
+  border-radius:15px 15px 5px 5px;
+  margin: 0 5px 15px 5px;
+  /*padding:0 10px;*/
+}
+
+@media (max-width: 991px) {
+  #mixedSlid .MS-content .item {
+    width:50%;
+  }
+}
+
+@media (max-width: 767px) {
+  #mixedSlid .MS-content .item {
+    width:100%;
+  }
+}
+
+#mixedSlid .MS-content .item .imgTitle {
+  position:relative;
+}
+
+#mixedSlid .MS-content .item .imgTitle .blogTitle {
+  margin:0;
+  text-align:left;
+  letter-spacing:2px;
+  color:#fcfcfc;
+  /*font-style:italic;*/
+  position:absolute;
+  background-color:#01a6f8;
+  /*width:100%;*/
+  bottom:0;
+  /*font-weight:bold;*/
+  padding:2px 3px;
+}
+
+#mixedSlid .MS-content .item .imgTitle img {
+  /* height:auto; */
+  width:100%;
+}
+
+#mixedSlid .MS-content .item p {
+  font-size:16px;
+  margin:2px 10px 0 5px;
+}
+
+#mixedSlid .MS-content .item a {
+  /*float:right;*/
+  /*margin:0 20px 0 0;*/
+  font-size:13px;
+  /*font-style:italic;*/
+  /*color:rgba(173, 0, 0, 0.82);*/
+  /*font-weight:bold;*/
+  /*letter-spacing:1px;*/
+  /*transition:linear 0.1s;*/
+  padding:0px 15px 0px 0px;
+  cursor:pointer;
+}
+
+#mixedSlid .MS-content .item a:hover {
+  text-shadow:0 0 1px grey;
+}
+
+#mixedSlid .MS-controls button {
+  position:absolute;
+  border:none;
+  background-color:transparent;
+  outline:0;
+  font-size:50px;
+  top:95px;
+  color:rgba(0, 0, 0, 0.4);
+  transition:0.15s linear;
+}
+
+#mixedSlid .MS-controls button:hover {
+  color:rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 992px) {
+  #mixedSlid .MS-controls button {
+    font-size:30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #mixedSlid .MS-controls button {
+    font-size:20px;
+  }
+}
+
+#mixedSlid .MS-controls .MS-left {
+  left:0px;
+}
+
+@media (max-width: 767px) {
+  #mixedSlid .MS-controls .MS-left {
+    left:-10px;
+  }
+}
+
+#mixedSlid .MS-controls .MS-right {
+  right:0px;
+}
+
+@media (max-width: 767px) {
+  #mixedSlid .MS-controls .MS-right {
+    right:-10px;
+  }
+}
+
+#basicSlid {
+  position:relative;
+}
+
+#basicSlid.MS-content {
+  white-space:nowrap;
+  overflow:hidden;
+  margin:0 2%;
+  height:50px;
+}
+
+#basicSlid.MS-content .item {
+  display:inline-block;
+  width:20%;
+  position:relative;
+  vertical-align:top;
+  overflow:hidden;
+  height:100%;
+  white-space:normal;
+  line-height:50px;
+  vertical-align:middle;
+}
+
+@media (max-width: 991px) {
+  #basicSlid.MS-content .item {
+    width:25%;
+  }
+}
+
+@media (max-width: 767px) {
+  #basicSlid.MS-content .item {
+    width:35%;
+  }
+}
+
+@media (max-width: 500px) {
+  #basicSlid.MS-content .item {
+    width:50%;
+  }
+}
+
+#basicSlid.MS-content .item a {
+  line-height:50px;
+  vertical-align:middle;
+}
+
+#basicSlid.MS-controls button {
+  position:absolute;
+}
+
+#basicSlid.MS-controls .MS-left {
+  top:35px;
+  left:10px;
+}
+
+#basicSlid.MS-controls .MS-right {
+  top:35px;
+  right:10px;
+}
+

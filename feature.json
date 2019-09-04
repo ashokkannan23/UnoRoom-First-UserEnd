@@ -1,0 +1,29 @@
+[{
+	"propertytype": "Apartments",
+	"propertyname": "Octave Hotel & Spa Sarjapur Rd",
+	"photo": "assets/img/feature-apartment.png"
+}, {
+	"propertytype": "Room",
+	"propertyname": "Flagship 22550 Meridien Suites",
+	"photo": "assets/img/feature-room.png"
+}, {
+	"propertytype": "Room",
+	"propertyname": "Pride Rooms",
+	"photo": "assets/img/featute-room2.png"
+},{
+	"propertytype": "Apartments",
+	"propertyname": "Bhagini Suites",
+	"photo": "assets/img/feature-apartment1.png"
+}, {
+	"propertytype": "Apartments",
+	"propertyname": "Serene Grove",
+	"photo": "assets/img/feature-apartment2.png"
+}, {
+	"propertytype": "Apartments",
+	"propertyname": "Sherwood Suites Serviced Apartment",
+	"photo": "assets/img/feature-apartment3.png"
+}, {
+	"propertytype": "Apartments",
+	"propertyname": "Sherwood Suites Serviced Apartment",
+	"photo": "assets/img/feature-apartment3.png"
+}]

@@ -1,0 +1,21 @@
+[{
+	"place": "MG Road",
+	"city": "Bangalore",
+	"img": "assets/img/mg-road.png"
+}, {
+	"place": "Connaught Place",
+	"city": "Delhi",
+	"img": "assets/img/connaught.png"
+}, {
+	"place": "Malabar Hill",
+	"city": "Mumbai",
+	"img": "assets/img/malabar.png"
+}, {
+	"place": "Connaught Place",
+	"city": "Delhi",
+	"img": "assets/img/connaught.png"
+}, {
+	"place": "Malabar Hill",
+	"city": "Mumbai",
+	"img": "assets/img/malabar.png"
+}]

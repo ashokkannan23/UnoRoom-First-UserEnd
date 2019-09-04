@@ -1,0 +1,100 @@
+<html>
+<body>
+<select id="city">
+   
+  
+   
+</select>
+
+<script
+  src="https://code.jquery.com/jquery-1.6.3.js"
+  integrity="sha256-m6oQ4cVjDD3Nm7Rr8AkTzJSzhV1YyUWa6YSDOcVm6Xs="
+  crossorigin="anonymous"></script>
+  
+  <script>
+   <!-- CITY-JSON-OPEN -->
+	$(document).ready(function(){
+    $.getJSON("city.json", function(result){
+      $.each(result, function(){
+	  
+	  var city = '';
+	
+	  var cityplace = result.length;
+		for(i=0;i<=cityplace-1;i++){
+   
+			city +='<option value="'+result[i].value+'">'+ result[i].city +'</option>';
+    
+               };
+			   
+		 $("#city").html(city);
+		 
+		localStorage.setItem("Select", "chennai");
+		
+		console.log(localStorage.getItem("Select"));
+		
+			$("#city option").each(function(){
+  if ($(this).val() == localStorage.getItem("Select")){
+    $(this).attr("selected","selected");
+	}
+});
+});
+});
+});
+</script>
+
+    
+    <!-- $('#city').find('option').each(function(i,e){ -->
+        <!-- if($(e).val() == localStorage.getItem("Select1")){ -->
+            <!-- $('#city').prop('selectedIndex',i); -->
+        <!-- } -->
+    <!-- }); -->
+	
+	<!-- <script> -->
+	<!-- var optionValue  = localStorage.getItem("Select1", "delhi") -->
+	
+	
+	
+	<!-- $("#city option").each(function(){ -->
+  <!-- if ($(this).val() == "delhi"){ -->
+    <!-- $(this).attr("selected","selected"); -->
+	<!-- } -->
+<!-- }); -->
+
+<!-- $("select option[value='delhi']").attr("selected","selected"); -->
+	
+	<!-- var cityplac = result.length; -->
+	<!-- for(i=0;i<=cityplac-1;i++){ -->
+	<!-- if(optionValue == result[i].value){ -->
+	
+	<!-- console.log(result[i].value); -->
+	
+      <!-- $("#city").find("option[value=" + optionValue +"]").attr('selected', true); -->
+	  <!-- } -->
+	  <!-- } -->
+		
+		
+			
+       
+      <!-- }); -->
+    <!-- }); -->
+	<!-- }); -->
+	
+  <!-- CITY-JSON-CLOSE -->
+  <!-- </script> -->
+  
+<!-- <script> -->
+		
+		<!-- $(document).ready(function(){ -->
+		<!-- localStorage.setItem("Select1", "Chennai"); -->
+    
+    <!-- $('#city').find('option').each(function(i,e){ -->
+        <!-- if($(e).val() == localStorage.getItem("Select1")){ -->
+            <!-- $('#city').prop('selectedIndex',i); -->
+        <!-- } -->
+    <!-- }); -->
+
+	
+	<!-- }); -->
+	<!-- </script> -->
+	</body>
+	</html>

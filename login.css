@@ -1,0 +1,38 @@
+.footer,.header{
+	margin: 0px !important;
+	padding: 10rem;
+	background-color: blue;
+}
+.btn{
+	background-color:red;
+	width:6rem;
+	margin-top: 10px;
+	margin-left: 50px;
+	color: white;
+}
+.login-form{
+	margin-left:8px;
+}
+.Heading{
+    font-size: 2.5rem;
+	margin-left: 9px;
+}
+.class1
+{
+	height:50vh;
+	width:230px;
+	padding: 10px;
+	background-color:lightgray;
+	margin-top: 8%;
+	margin-left: 45%;
+	border-radius:5px;
+}
+.form-value{
+	width:200px;
+	margin-left:9px;
+}
+.login{
+	width:200px;
+	margin-left:7px;
+	border-style:radius;
+}	

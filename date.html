@@ -1,0 +1,53 @@
+<html>
+<body>
+<div class="compare"></div>
+
+<script>
+
+var date1 = '2019-05-27';
+var date2 = '2019-05-28';
+var date3 = '2019-05-28';
+var date4 = '2019-05-30';
+
+date1 = new Date(date1);
+date2 = new Date(date2);
+date3 = new Date(date3);
+date4 = new Date(date4);
+
+
+var milliseconds= date2-date1;
+
+function msToTime(s) {
+
+  // Pad to 2 or 3 digits, default is 2
+  function pad(n, z) {
+    z = z || 6;
+    return ('000000' + n).slice(-z);
+  }
+
+  var ms = s % 1000;
+  s = (s - ms) / 1000;
+  var secs = s % 60;
+  s = (s - secs) / 60;
+  var mins = s % 60;
+  var hrs = (s - mins) / 60;
+
+  <!-- return pad(hrs) + ':' + pad(mins) + ':' + pad(secs) + '.' + pad(ms, 3); -->
+  return pad(hrs);
+}
+
+console.log(msToTime(milliseconds))
+
+var result =(msToTime(milliseconds)*(3000/24));
+
+console.log(result);
+
+
+
+
+ 
+</script>
+
+
+</body>
+</html>
